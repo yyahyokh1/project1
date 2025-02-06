@@ -154,5 +154,128 @@ int main() {
 
     return 0;
 }*/
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    double weight1, price1, weight2, price2;
+
+
+    cout << "Enter weight and price for package 1: ";
+    cin >> weight1 >> price1;
+
+
+    cout << "Enter weight and price for package 2: ";
+    cin >> weight2 >> price2;
+
+
+    double pricePerUnit1 = price1 / weight1;
+    double pricePerUnit2 = price2 / weight2;
+
+
+    if (pricePerUnit1 < pricePerUnit2) {
+        cout << "Package 1 has a better price" << endl;
+    }
+    else if (pricePerUnit1 > pricePerUnit2) {
+        cout << "Package 2 has a better price" << endl;
+    }
+    else {
+        cout << "Two packages have the same price." << endl;
+    }
+
+    return 0;
+}*/
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int number, originalNumber, reversedNumber = 0, remainder;
+
+
+    cout << "Enter a three-digit integer: ";
+    cin >> number;
+
+    originalNumber = number;
+
+
+    while (number != 0) {
+        remainder = number % 10;
+        reversedNumber = reversedNumber * 10 + remainder;
+        number /= 10;
+    }
+
+    if (originalNumber == reversedNumber) {
+        cout << originalNumber << " is a palindrome" << endl;
+    } else {
+        cout << originalNumber << " is not a palindrome" << endl;
+    }
+
+    return 0;
+}*/
+/*#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x, y, distance;
+
+
+    cout << "Enter the coordinates of the point (x, y): ";
+    cin >> x >> y;
+
+
+    distance = sqrt(x * x + y * y);
+
+
+    if (distance <= 10) {
+        cout << "The point (" << x << ", " << y << ") is inside the circle." << endl;
+    } else {
+        cout << "The point (" << x << ", " << y << ") is outside the circle." << endl;
+    }
+
+    return 0;
+}*/
+/*include <iostream>
+using namespace std;
+
+int main() {
+    float gpa;
+
+
+    cout << "Enter the student's GPA (0 - 4.5): ";
+    cin >> gpa;
+
+
+    switch (static_cast<int>(gpa * 10)) {
+        case 40:
+            cout << "Scholarship: 80%" << endl;
+        break;
+        case 35:
+        case 36:
+        case 37:
+        case 38:
+        case 39:
+            cout << "Scholarship: 60%" << endl;
+        break;
+        case 30:
+        case 31:
+        case 32:
+        case 33:
+        case 34:
+            cout << "Scholarship: 50%" << endl;
+        break;
+        default:
+            if (gpa < 3.0) {
+                cout << "No scholarship" << endl;
+            }
+        break;
+    }
+
+    return 0;
+}*/
+
+
+
+
 
 
